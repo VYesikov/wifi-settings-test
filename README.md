@@ -37,6 +37,8 @@ this network now).
 ## How to run tests
 
 1. Start Appium server 
+> [NOTE] This step may be skipped - server will be started automatically from tests
+ 
 2. Start Android Emulator minimum with 27 api level
     
 ### Run tests via JUnit configuration
@@ -49,7 +51,7 @@ this network now).
 1. Open command line (Git Bash)
 2. Go to the root of the Test Framework
 3. Edit run_tests.sh script and set **deviceName** variable to the name of android emulator
-3. Run script `./sh run_tests.sh`
+3. Run script `sh run_tests.sh`
 
 #### Basic test scenarios
 
