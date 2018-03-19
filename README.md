@@ -1,7 +1,7 @@
 WiFi Settings Functional Tests
 ==============
 
-##Description
+## Description
 This project is compact test framework with functional tests for WiFi Settings apk.
 
 **apk** under test is allocated in the root of framework and named as **app-release.apk**.
@@ -25,12 +25,13 @@ this network now).
    
    **Android SDK API 27** - download using Android Studio
   
-##Configuration
-####Environment Variables
-  |**Variable name**| **Value / Description**|
-  |-----------------|----------------|
-  |platform| **android** / **ios**|
-  |deviceName| name of **Emulator** or **Real device**|
+## Configuration
+
+#### Environment Variables
+|**Variable name**| **Value / Description**|
+|-----------------|----------------|
+|platform| **android** / **ios**|
+|deviceName| name of **Emulator** or **Real device**|
    
    
 ## How to run tests
