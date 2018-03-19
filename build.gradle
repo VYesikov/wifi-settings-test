@@ -1,0 +1,43 @@
+group 'com.techtask'
+version '1.0-SNAPSHOT'
+
+
+def toolVersions = [
+        junitPlatformVersion: '1.0.0',
+        junitJupiterVersion : '5.0.0',
+        appiumVersion: '5.0.4'
+]
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: org.junit.platform.gradle.plugin.JUnitPlatformPlugin
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.0'
+    }
+}
+
+junitPlatform {
+    platformVersion toolVersions.junitPlatformVersion
+    filters {
+        includeClassNamePatterns '^.*Tests?$'
+    }
+}
+
+dependencies {
+    compile("io.appium:java-client:${toolVersions.appiumVersion}")
+    compile("org.junit.jupiter:junit-jupiter-api:${toolVersions.junitJupiterVersion}")
+    compile("org.junit.jupiter:junit-jupiter-engine:${toolVersions.junitJupiterVersion}")
+}
+
