@@ -19,6 +19,8 @@ this network now).
    
    **Graddle** - https://gradle.org/install
    
+   **adb** - https://adb.clockworkmod.com
+   
    **Appium, Node.js, UiAutomator2 Driver** - http://appium.io/docs/en/about-appium/getting-started/?lang=en   
 
    **AndroidStudio** - https://developer.android.com/studio/index.html
@@ -32,7 +34,6 @@ this network now).
 |-----------------|----------------|
 |platform| **android** / **ios**|
 |deviceName| name of **Emulator** or **Real device**|
-   
    
 ## How to run tests
 
